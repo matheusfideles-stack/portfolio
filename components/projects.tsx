@@ -57,7 +57,7 @@ export function Projects() {
                 {project.title}
               </h3>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
-                {project.description}
+                {language === "pt" ? project.descriptionPt : project.descriptionEn}
               </p>
 
               <div className="mt-5 flex flex-wrap gap-2">

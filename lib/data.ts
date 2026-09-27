@@ -1,6 +1,7 @@
 export type Project = {
   title: string;
-  description: string;
+  descriptionPt: string;
+  descriptionEn: string;
   tags: string[];
   demoUrl: string;
   githubUrl: string;
@@ -11,8 +12,10 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Med Voll",
-    description:
+    descriptionPt:
       "CRUD completo para clínica de médicos em Spring Boot. Gerenciamento de consultas, médicos e pacientes com persistência em banco de dados.",
+    descriptionEn:
+      "Complete CRUD for medical clinic in Spring Boot. Management of appointments, doctors and patients with database persistence.",
     tags: ["Java", "Spring Boot", "JPA", "Database"],
     demoUrl: "https://github.com/matheusfideles-stack/Med_Voll",
     githubUrl: "https://github.com/matheusfideles-stack/Med_Voll",
@@ -21,8 +24,10 @@ export const projects: Project[] = [
   },
   {
     title: "OS Manager",
-    description:
+    descriptionPt:
       "Sistema de Ordem de Serviço com API REST em Spring Boot + JWT e frontend em PHP. Orquestrado em Docker com Spring Security.",
+    descriptionEn:
+      "Service Order system with REST API in Spring Boot + JWT and PHP frontend. Orchestrated in Docker with Spring Security.",
     tags: ["Java", "Spring Boot", "PHP", "Docker", "JWT"],
     demoUrl: "https://github.com/matheusfideles-stack/os-manager",
     githubUrl: "https://github.com/matheusfideles-stack/os-manager",
@@ -31,8 +36,10 @@ export const projects: Project[] = [
   },
   {
     title: "QR Code Generator",
-    description:
+    descriptionPt:
       "API para geração dinâmica de QR Codes com Spring Boot. Suporta customização de tamanho, formato e codificação em tempo real.",
+    descriptionEn:
+      "API for dynamic QR Code generation with Spring Boot. Supports customization of size, format and real-time encoding.",
     tags: ["Java", "Spring Boot", "REST API", "QR Code"],
     demoUrl: "https://github.com/matheusfideles-stack/qrcode.generator",
     githubUrl: "https://github.com/matheusfideles-stack/qrcode.generator",
@@ -41,8 +48,10 @@ export const projects: Project[] = [
   },
   {
     title: "Screenmatch",
-    description:
+    descriptionPt:
       "Catálogo de séries com persistência de dados. Busca informações em APIs externas e armazena localmente usando Spring Data e H2.",
+    descriptionEn:
+      "Series catalog with data persistence. Fetches information from external APIs and stores locally using Spring Data and H2.",
     tags: ["Java", "Spring Boot", "H2", "REST", "API Integration"],
     demoUrl: "https://github.com/matheusfideles-stack/screenmatch",
     githubUrl: "https://github.com/matheusfideles-stack/screenmatch",
@@ -50,8 +59,10 @@ export const projects: Project[] = [
   },
   {
     title: "Autenticação e Autorização",
-    description:
+    descriptionPt:
       "Sistema completo de autenticação e autorização com Spring Boot. Implementa JWT, validação de permissões e proteção de endpoints.",
+    descriptionEn:
+      "Complete authentication and authorization system with Spring Boot. Implements JWT, permission validation and endpoint protection.",
     tags: ["Java", "Spring Boot", "JWT", "Security"],
     demoUrl: "https://github.com/matheusfideles-stack/Autenticacao_Autorizacao",
     githubUrl: "https://github.com/matheusfideles-stack/Autenticacao_Autorizacao",
@@ -59,8 +70,10 @@ export const projects: Project[] = [
   },
   {
     title: "Desafio Itaú",
-    description:
+    descriptionPt:
       "Desafio técnico do Itaú implementado com Spring Boot. Demonstra padrões de desenvolvimento, testes unitários e boas práticas.",
+    descriptionEn:
+      "Itaú technical challenge implemented with Spring Boot. Demonstrates development patterns, unit tests and best practices.",
     tags: ["Java", "Spring Boot", "Testing", "Challenge"],
     demoUrl: "https://github.com/matheusfideles-stack/desafio.itau.springboot",
     githubUrl: "https://github.com/matheusfideles-stack/desafio.itau.springboot",
