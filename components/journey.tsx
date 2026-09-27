@@ -28,7 +28,7 @@ export function Journey() {
         description={language === "pt" ? "Uma visão rápida do meu caminho profissional até agora." : "A quick look at my professional path so far."}
       />
 
-      <div className="space-y-8">
+      <div className="relative border-l-2 border-border pl-8 space-y-12">
         {journey.map((item, index) => (
           <motion.div
             key={item.company}
@@ -36,29 +36,42 @@ export function Journey() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-            className="rounded-2xl border border-border bg-surface p-6"
+            className="relative"
           >
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-              <div className="flex gap-4">
-                {item.logo && (
-                  <div className="h-12 w-12 flex-shrink-0 rounded-lg border border-border bg-background p-1">
-                    <img src={item.logo} alt={item.company} className="h-full w-full object-contain" />
-                  </div>
-                )}
-                <div className="flex-1">
-                  <h3 className="text-base font-semibold text-foreground">
-                    {item.company}
-                  </h3>
-                  <p className="text-sm text-muted">{language === "pt" ? item.rolePt : item.roleEn}</p>
+            {/* Timeline dot */}
+            <span className="absolute -left-[2.35rem] top-1 flex h-4 w-4 items-center justify-center">
+              {item.current && (
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+              )}
+              <span className="relative inline-flex h-4 w-4 rounded-full bg-accent" />
+            </span>
+
+            {/* Logo and header */}
+            <div className="flex items-start gap-4">
+              {item.logo && (
+                <div className="h-14 w-14 flex-shrink-0 rounded-lg border border-border bg-background p-2">
+                  <img src={item.logo} alt={item.company} className="h-full w-full object-contain" />
                 </div>
+              )}
+              <div className="flex-1">
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground">
+                      {item.company}
+                    </h3>
+                    <p className="text-sm text-muted">{language === "pt" ? item.rolePt : item.roleEn}</p>
+                  </div>
+                  <span className="text-sm font-medium text-accent">
+                    {item.period}
+                  </span>
+                </div>
+
+                {/* Description */}
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+                  {language === "pt" ? item.descriptionPt : item.descriptionEn}
+                </p>
               </div>
-              <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
-                {item.period}
-              </span>
             </div>
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
-              {language === "pt" ? item.descriptionPt : item.descriptionEn}
-            </p>
           </motion.div>
         ))}
       </div>
