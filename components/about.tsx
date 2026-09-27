@@ -38,7 +38,7 @@ export function About() {
             About
           </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            I build software the way I'd want to use it.
+            I build software the way I&apos;d want to use it.
           </h2>
           <div className="mt-6 space-y-4 text-balance leading-relaxed text-muted">
             <p>
@@ -49,7 +49,7 @@ export function About() {
               focused on Java and Spring Boot — building APIs, services, and
               data models that stay reliable as they scale. I care about
               getting the fundamentals right: clear boundaries, solid data
-              structures, and code that's easy to reason about.
+              structures, and code that&apos;s easy to reason about.
             </p>
             <p>
               What drives me is building things that hold up under
