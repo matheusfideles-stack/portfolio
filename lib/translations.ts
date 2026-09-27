@@ -30,15 +30,15 @@ export const translations = {
       description3:
         "Fora de escrever código, geralmente estou refinando meu fluxo de trabalho, explorando novas ferramentas, ou estudando como sistemas backend sólidos são projetados — sempre procurando maneiras de elevar a qualidade do meu próprio trabalho.",
       principles: {
-        principle1: "Qualidade de código em primeiro lugar",
+        principle1: "Código legível é código mantível",
         description1:
-          "Escrevo código que é fácil de ler, testar e mudar seis meses depois — não apenas código que funciona hoje.",
-        principle2: "Pensando em sistemas",
+          "Estruturo projetos para que terceiros — ou eu mesmo em 6 meses — entendam rapidamente o que cada componente faz.",
+        principle2: "Arquitetura que escala",
         description2:
-          "Do schema do banco de dados aos limites dos serviços, me importo com como as peças se encaixam, não apenas com a funcionalidade na minha frente.",
-        principle3: "Craft orientado a detalhes",
+          "Desde o schema do banco até a orquestração de serviços, cada decisão considera crescimento: performance, confiabilidade e manutenção futura.",
+        principle3: "Qualidade antes de tudo",
         description3:
-          "Casos extremos, modos de falha e tratamento de erros não são uma reflexão tardia — são parte do que torna um sistema pronto para produção.",
+          "Testes rigorosos, tratamento de erros robusto e documentação clara — o que separa código de produção de código que apenas funciona hoje.",
       },
     },
     stack: {
@@ -108,15 +108,15 @@ export const translations = {
       description3:
         "Outside of writing code, I'm usually refining my workflow, exploring new tools, or studying how solid backend systems are designed — always looking for ways to raise the bar on my own work.",
       principles: {
-        principle1: "Code quality first",
+        principle1: "Readable code is maintainable code",
         description1:
-          "I write code that's easy to read, test, and change six months from now — not just code that works today.",
-        principle2: "Thinking in systems",
+          "I structure projects so that anyone — or my future self in 6 months — can quickly understand what each component does.",
+        principle2: "Architecture that scales",
         description2:
-          "From database schema to service boundaries, I care about how the pieces fit together, not just the feature in front of me.",
-        principle3: "Detail-driven craft",
+          "From database schema to service orchestration, every decision considers growth: performance, reliability, and future maintenance.",
+        principle3: "Quality above all",
         description3:
-          "Edge cases, failure modes, and error handling aren't an afterthought — they're part of what makes a system production-ready.",
+          "Rigorous testing, robust error handling, and clear documentation — the difference between production code and code that merely works today.",
       },
     },
     stack: {
