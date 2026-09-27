@@ -7,7 +7,6 @@ import { socialLinks } from "@/lib/data";
 const socialRow = [
   { label: "GitHub", href: socialLinks.github },
   { label: "LinkedIn", href: socialLinks.linkedin },
-  { label: "X", href: socialLinks.twitter },
 ];
 
 export function Hero() {
@@ -21,7 +20,7 @@ export function Hero() {
           className="flex flex-col items-center"
         >
           <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-            Software Engineer &middot; Full Stack
+            Software Engineer &middot; Backend
           </p>
 
           <h1 className="text-balance text-4xl font-bold leading-[1.15] tracking-tight text-foreground sm:text-5xl lg:text-[3.2rem]">
@@ -37,9 +36,9 @@ export function Hero() {
           <div className="mt-8 h-px w-16 bg-accent" />
 
           <p className="mt-8 max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg">
-            I design and build clean, scalable, and user-centric digital
-            experiences — from robust APIs to polished interfaces — using
-            modern tools like React, Next.js, TypeScript, and Node.js.
+            I design and build scalable, reliable backend systems — APIs,
+            services, and data pipelines — using Java, Spring Boot, and
+            solid engineering practices.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">

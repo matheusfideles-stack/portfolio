@@ -14,13 +14,13 @@ const principles = [
     icon: Layers,
     title: "Thinking in systems",
     description:
-      "From database schema to UI state, I care about how the pieces fit together, not just the feature in front of me.",
+      "From database schema to service boundaries, I care about how the pieces fit together, not just the feature in front of me.",
   },
   {
     icon: Sparkles,
     title: "Detail-driven craft",
     description:
-      "Micro-interactions, loading states, and edge cases aren't an afterthought — they're part of what makes software feel finished.",
+      "Edge cases, failure modes, and error handling aren't an afterthought — they're part of what makes a system production-ready.",
   },
 ];
 
@@ -44,29 +44,27 @@ export function About() {
             <p>
               I&apos;m a{" "}
               <span className="rounded-md bg-accent-soft px-1.5 py-0.5 font-medium text-accent">
-                Full Stack Software Engineer
+                Backend Software Engineer
               </span>{" "}
-              who enjoys the entire lifecycle of a product — architecting
-              APIs, shaping data models, and polishing the interface people
-              actually touch. My background spans React and Next.js on the
-              frontend to Node.js and Python on the backend, always with an
-              eye for maintainability.
+              focused on Java and Spring Boot — building APIs, services, and
+              data models that stay reliable as they scale. I care about
+              getting the fundamentals right: clear boundaries, solid data
+              structures, and code that's easy to reason about.
             </p>
             <p>
-              What drives me is the intersection of engineering and design:
-              building things that are technically solid and genuinely
-              pleasant to use. I care about{" "}
+              What drives me is building things that hold up under
+              real-world use. I care about{" "}
               <span className="rounded-md bg-accent-soft px-1.5 py-0.5 font-medium text-accent">
                 clean architecture
               </span>
-              , thoughtful UX, and shipping software that holds up under
-              real-world use.
+              , thoughtful engineering trade-offs, and shipping software that
+              keeps working long after it ships.
             </p>
             <p>
               Outside of writing code, I&apos;m usually refining my
-              workflow, exploring new tools, or studying how great products
-              are designed — always looking for ways to raise the bar on my
-              own work.
+              workflow, exploring new tools, or studying how solid backend
+              systems are designed — always looking for ways to raise the
+              bar on my own work.
             </p>
           </div>
         </motion.div>

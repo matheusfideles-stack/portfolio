@@ -12,12 +12,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Matheus Fideles — Software Engineer",
   description:
-    "Matheus Fideles is a Full Stack Software Engineer building high-performance, user-centric web applications with React, Next.js, TypeScript, and Node.js.",
+    "Matheus Fideles is a Backend Software Engineer building scalable, reliable systems with Java and Spring Boot.",
   metadataBase: new URL("https://matheusfideles.dev"),
   openGraph: {
     title: "Matheus Fideles — Software Engineer",
     description:
-      "Full Stack Software Engineer building high-performance web applications.",
+      "Backend Software Engineer building scalable, reliable systems with Java and Spring Boot.",
     type: "website",
   },
 };

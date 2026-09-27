@@ -14,7 +14,7 @@ export function TechStack() {
           description="A pragmatic, modern toolkit focused on type safety, developer experience, and shipping reliable software fast."
         />
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}

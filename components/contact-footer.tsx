@@ -7,7 +7,6 @@ import { socialLinks } from "@/lib/data";
 const links = [
   { label: "GitHub", href: socialLinks.github },
   { label: "LinkedIn", href: socialLinks.linkedin },
-  { label: "X (Twitter)", href: socialLinks.twitter },
 ];
 
 export function ContactFooter() {
