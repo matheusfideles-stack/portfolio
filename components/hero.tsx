@@ -72,11 +72,19 @@ export function Hero() {
               {t.hero.cta.contact}
             </a>
             <a
-              href={language === "pt" ? "/cv-pt.pdf" : "/cv-en.pdf"}
+              href="/cv-en.pdf"
               download
               className="focus-ring group inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/50 hover:bg-surface"
             >
-              {t.hero.cta.resume}
+              {language === "pt" ? "Resume - EN" : "Resume - EN"}
+              <ArrowUpRight className="h-3.5 w-3.5 text-muted transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent" />
+            </a>
+            <a
+              href="/cv-pt.pdf"
+              download
+              className="focus-ring group inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/50 hover:bg-surface"
+            >
+              {language === "pt" ? "Resume - PT" : "Resume - PT"}
               <ArrowUpRight className="h-3.5 w-3.5 text-muted transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent" />
             </a>
           </div>
