@@ -2,29 +2,41 @@
 
 import { motion } from "framer-motion";
 import { Code2, Layers, Sparkles } from "lucide-react";
-
-const principles = [
-  {
-    icon: Code2,
-    title: "Code quality first",
-    description:
-      "I write code that's easy to read, test, and change six months from now — not just code that works today.",
-  },
-  {
-    icon: Layers,
-    title: "Thinking in systems",
-    description:
-      "From database schema to service boundaries, I care about how the pieces fit together, not just the feature in front of me.",
-  },
-  {
-    icon: Sparkles,
-    title: "Detail-driven craft",
-    description:
-      "Edge cases, failure modes, and error handling aren't an afterthought — they're part of what makes a system production-ready.",
-  },
-];
+import { useEffect, useState } from "react";
+import { getTranslation } from "@/lib/translations";
 
 export function About() {
+  const [language, setLanguageState] = useState<"pt" | "en">("pt");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const saved = localStorage.getItem("language") as "pt" | "en" | null;
+    if (saved && (saved === "pt" || saved === "en")) {
+      setLanguageState(saved);
+    }
+  }, []);
+
+  const t = getTranslation(language);
+
+  const principles = [
+    {
+      icon: Code2,
+      title: t.about.principles.principle1,
+      description: t.about.principles.description1,
+    },
+    {
+      icon: Layers,
+      title: t.about.principles.principle2,
+      description: t.about.principles.description2,
+    },
+    {
+      icon: Sparkles,
+      title: t.about.principles.principle3,
+      description: t.about.principles.description3,
+    },
+  ];
+
   return (
     <section id="about" className="mx-auto max-w-content px-6 py-24">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-[0.9fr_1.1fr]">
@@ -35,36 +47,26 @@ export function About() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-accent">
-            About
+            {t.about.eyebrow}
           </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            I build software the way I&apos;d want to use it.
+            {t.about.title}
           </h2>
           <div className="mt-6 space-y-4 text-balance leading-relaxed text-muted">
             <p>
-              I&apos;m a{" "}
+              {language === "pt" ? "Sou um " : "I'm a "}{" "}
               <span className="rounded-md bg-accent-soft px-1.5 py-0.5 font-medium text-accent">
-                Backend Software Engineer
+                {language === "pt"
+                  ? "Engenheiro de Software Backend"
+                  : "Backend Software Engineer"}
               </span>{" "}
-              focused on Java and Spring Boot — building APIs, services, and
-              data models that stay reliable as they scale. I care about
-              getting the fundamentals right: clear boundaries, solid data
-              structures, and code that&apos;s easy to reason about.
+              {t.about.description1}
             </p>
             <p>
-              What drives me is building things that hold up under
-              real-world use. I care about{" "}
-              <span className="rounded-md bg-accent-soft px-1.5 py-0.5 font-medium text-accent">
-                clean architecture
-              </span>
-              , thoughtful engineering trade-offs, and shipping software that
-              keeps working long after it ships.
+              {t.about.description2}
             </p>
             <p>
-              Outside of writing code, I&apos;m usually refining my
-              workflow, exploring new tools, or studying how solid backend
-              systems are designed — always looking for ways to raise the
-              bar on my own work.
+              {t.about.description3}
             </p>
           </div>
         </motion.div>

@@ -1,16 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { journey } from "@/lib/data";
 import { SectionHeading } from "@/components/section-heading";
+import { getTranslation } from "@/lib/translations";
 
 export function Journey() {
+  const [language, setLanguageState] = useState<"pt" | "en">("pt");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const saved = localStorage.getItem("language") as "pt" | "en" | null;
+    if (saved && (saved === "pt" || saved === "en")) {
+      setLanguageState(saved);
+    }
+  }, []);
+
+  const t = getTranslation(language);
+
   return (
     <section id="journey" className="mx-auto max-w-content px-6 py-24">
       <SectionHeading
-        eyebrow="Journey"
-        title="Where I've worked."
-        description="A quick look at my professional path so far."
+        eyebrow={t.journey.eyebrow}
+        title={language === "pt" ? "Onde trabalhei." : "Where I've worked."}
+        description={language === "pt" ? "Uma visão rápida do meu caminho profissional até agora." : "A quick look at my professional path so far."}
       />
 
       <div className="relative border-l border-border pl-8">

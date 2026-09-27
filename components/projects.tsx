@@ -1,17 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { ArrowUpRight, Github, Hammer } from "lucide-react";
 import { projects } from "@/lib/data";
 import { SectionHeading } from "@/components/section-heading";
+import { getTranslation } from "@/lib/translations";
 
 export function Projects() {
+  const [language, setLanguageState] = useState<"pt" | "en">("pt");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const saved = localStorage.getItem("language") as "pt" | "en" | null;
+    if (saved && (saved === "pt" || saved === "en")) {
+      setLanguageState(saved);
+    }
+  }, []);
+
+  const t = getTranslation(language);
+
   return (
     <section id="projects" className="mx-auto max-w-content px-6 py-24">
       <SectionHeading
-        eyebrow="Selected Work"
-        title="Projects I've built and shipped."
-        description="A mix of backend systems and services — each built with an emphasis on performance, maintainability, and a great developer experience."
+        eyebrow={t.projects.eyebrow}
+        title={t.projects.title}
+        description={t.projects.description}
       />
 
       {projects.length === 0 ? (
@@ -20,11 +35,10 @@ export function Projects() {
             <Hammer className="h-5 w-5" />
           </div>
           <p className="text-sm font-medium text-foreground">
-            New projects coming soon.
+            {t.projects.empty}
           </p>
           <p className="max-w-sm text-sm text-muted">
-            I&apos;m currently working on things worth sharing here. Check
-            back soon, or take a look at my GitHub in the meantime.
+            {t.projects.emptyDescription}
           </p>
         </div>
       ) : (

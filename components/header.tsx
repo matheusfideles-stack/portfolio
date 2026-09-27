@@ -2,12 +2,33 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "@/lib/data";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { LanguageToggle } from "@/components/language-toggle";
+import { getTranslation } from "@/lib/translations";
 
 export function Header() {
+  const [language, setLanguageState] = useState<"pt" | "en">("pt");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const saved = localStorage.getItem("language") as "pt" | "en" | null;
+    if (saved && (saved === "pt" || saved === "en")) {
+      setLanguageState(saved);
+    }
+  }, []);
+
+  const t = getTranslation(language);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navLinks = [
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.stack, href: "#stack" },
+    { label: t.nav.journey, href: "#journey" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.contact, href: "#contact" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -44,11 +65,13 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center md:flex">
+        <div className="hidden items-center gap-3 md:flex">
+          <LanguageToggle />
           <ThemeToggle />
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
+          <LanguageToggle />
           <ThemeToggle />
           <button
             type="button"

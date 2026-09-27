@@ -1,11 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Award, ArrowUpRight } from "lucide-react";
 import { certifications } from "@/lib/data";
 import { SectionHeading } from "@/components/section-heading";
+import { getTranslation } from "@/lib/translations";
 
 export function Certifications() {
+  const [language, setLanguageState] = useState<"pt" | "en">("pt");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const saved = localStorage.getItem("language") as "pt" | "en" | null;
+    if (saved && (saved === "pt" || saved === "en")) {
+      setLanguageState(saved);
+    }
+  }, []);
+
+  const t = getTranslation(language);
+
   return (
     <section
       id="certifications"
@@ -13,9 +28,9 @@ export function Certifications() {
     >
       <div className="mx-auto max-w-content px-6 py-24">
         <SectionHeading
-          eyebrow="Certifications"
-          title="Verified credentials."
-          description="Courses and certifications that back up what I know."
+          eyebrow={t.certifications.eyebrow}
+          title={language === "pt" ? "Credenciais verificadas." : "Verified credentials."}
+          description={language === "pt" ? "Cursos e certificações que comprovam o que sei." : "Courses and certifications that back up what I know."}
         />
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
