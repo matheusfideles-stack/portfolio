@@ -49,7 +49,7 @@ export function Journey() {
                   <h3 className="text-base font-semibold text-foreground">
                     {item.company}
                   </h3>
-                  <p className="text-sm text-muted">{item.role}</p>
+                  <p className="text-sm text-muted">{language === "pt" ? item.rolePt : item.roleEn}</p>
                 </div>
               </div>
               <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
@@ -57,7 +57,7 @@ export function Journey() {
               </span>
             </div>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
-              {item.description}
+              {language === "pt" ? item.descriptionPt : item.descriptionEn}
             </p>
           </motion.div>
         ))}

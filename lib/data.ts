@@ -108,21 +108,25 @@ export const navLinks = [
 
 export type JourneyItem = {
   company: string;
-  role: string;
+  rolePt: string;
+  roleEn: string;
   period: string;
-  description: string;
+  descriptionPt: string;
+  descriptionEn: string;
   current?: boolean;
   logo?: string;
 };
 
-// Replace with your real work history.
 export const journey: JourneyItem[] = [
   {
     company: "Flexcon",
-    role: "Inteligência Comercial",
+    rolePt: "Inteligência Comercial",
+    roleEn: "Commercial Intelligence",
     period: "2026 — agora",
-    description:
+    descriptionPt:
       "Transformar dados de vendas e clientes em insights acionáveis — construindo relatórios e dashboards que apoiam a tomada de decisões comerciais para uma operação parceira da Vivo.",
+    descriptionEn:
+      "Transforming sales and customer data into actionable insights — building reports and dashboards that support commercial decision-making for a Vivo partner operation.",
     current: true,
     logo: "/flexcon-logo.svg",
   },
