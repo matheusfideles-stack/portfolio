@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 60">
-  <rect width="140" height="60" fill="#0F1C2E"/>
-  <text x="5" y="48" font-family="Arial, sans-serif" font-size="44" font-weight="bold" fill="white">flex</text>
-  <text x="72" y="48" font-family="Arial, sans-serif" font-size="44" font-weight="bold" fill="#06B6D4">con</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 70">
+  <rect width="160" height="70" fill="#0F1C2E"/>
+  <text x="8" y="55" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="white">flex</text>
+  <text x="82" y="55" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#06B6D4">con</text>
 </svg>
