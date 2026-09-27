@@ -26,9 +26,9 @@ export const translations = {
       description1:
         "Sou um Engenheiro de Software Backend focado em Java e Spring Boot — construindo APIs, serviços e modelos de dados que se mantêm confiáveis conforme escalam. Me importo em acertar os fundamentos: limites claros, estruturas de dados sólidas e código que é fácil de raciocinar.",
       description2:
-        "O que me motiva é construir coisas que funcionam bem sob uso real. Me importo com arquitetura limpa, trade-offs de engenharia bem pensados e software que continua funcionando muito depois de ser lançado.",
+        "Construo sistemas pensando em durabilidade: arquitetura limpa, decisões bem fundamentadas e código que continua confiável meses depois de ir para produção.",
       description3:
-        "Fora de escrever código, geralmente estou refinando meu fluxo de trabalho, explorando novas ferramentas, ou estudando como sistemas backend sólidos são projetados — sempre procurando maneiras de elevar a qualidade do meu próprio trabalho.",
+        "Estou sempre refinando meu fluxo de trabalho, estudando como grandes sistemas backend são estruturados, e buscando novas formas de escrever código melhor.",
       principles: {
         principle1: "Código legível é código mantível",
         description1:
@@ -104,9 +104,9 @@ export const translations = {
       description1:
         "I'm a Backend Software Engineer focused on Java and Spring Boot — building APIs, services, and data models that stay reliable as they scale. I care about getting the fundamentals right: clear boundaries, solid data structures, and code that's easy to reason about.",
       description2:
-        "What drives me is building things that hold up under real-world use. I care about clean architecture, thoughtful engineering trade-offs, and shipping software that keeps working long after it ships.",
+        "I build systems with durability in mind: clean architecture, well-reasoned decisions, and code that stays reliable long after shipping to production.",
       description3:
-        "Outside of writing code, I'm usually refining my workflow, exploring new tools, or studying how solid backend systems are designed — always looking for ways to raise the bar on my own work.",
+        "I'm constantly refining my workflow, studying how great backend systems are built, and finding new ways to write better code.",
       principles: {
         principle1: "Readable code is maintainable code",
         description1:
