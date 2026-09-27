@@ -10,61 +10,61 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Auth JWT API",
+    title: "Med Voll",
     description:
-      "Sistema de autenticação e autorização com JWT em Spring Boot. Implementa fluxo seguro de login, refresh tokens e validação de permissões.",
-    tags: ["Java", "Spring Boot", "JWT", "MySQL", "Security"],
-    demoUrl: "https://github.com/matheusfideles-stack/auth-jwt-api",
-    githubUrl: "https://github.com/matheusfideles-stack/auth-jwt-api",
+      "CRUD completo para clínica de médicos em Spring Boot. Gerenciamento de consultas, médicos e pacientes com persistência em banco de dados.",
+    tags: ["Java", "Spring Boot", "JPA", "Database"],
+    demoUrl: "https://github.com/matheusfideles-stack/Med_Voll",
+    githubUrl: "https://github.com/matheusfideles-stack/Med_Voll",
     gradient: "from-blue-600 to-blue-400",
-    featured: true,
-  },
-  {
-    title: "Med Voll API",
-    description:
-      "API REST para gerenciamento de médicos e agendamentos. Utiliza Flyway para versionamento de banco de dados e Spring Data JPA.",
-    tags: ["Java", "Spring Boot", "PostgreSQL", "Flyway", "REST API"],
-    demoUrl: "https://github.com/matheusfideles-stack/med-voll-api",
-    githubUrl: "https://github.com/matheusfideles-stack/med-voll-api",
-    gradient: "from-emerald-600 to-emerald-400",
     featured: true,
   },
   {
     title: "OS Manager",
     description:
-      "Sistema de Ordem de Serviço com API REST em Spring Boot e frontend em PHP. Gerenciamento completo de serviços com persistência em banco de dados.",
-    tags: ["Java", "Spring Boot", "PHP", "HTML/CSS/JS", "REST"],
+      "Sistema de Ordem de Serviço com API REST em Spring Boot + JWT e frontend em PHP. Orquestrado em Docker com Spring Security.",
+    tags: ["Java", "Spring Boot", "PHP", "Docker", "JWT"],
     demoUrl: "https://github.com/matheusfideles-stack/os-manager",
     githubUrl: "https://github.com/matheusfideles-stack/os-manager",
+    gradient: "from-emerald-600 to-emerald-400",
+    featured: true,
+  },
+  {
+    title: "QR Code Generator",
+    description:
+      "API para geração dinâmica de QR Codes com Spring Boot. Suporta customização de tamanho, formato e codificação em tempo real.",
+    tags: ["Java", "Spring Boot", "REST API", "QR Code"],
+    demoUrl: "https://github.com/matheusfideles-stack/qrcode.generator",
+    githubUrl: "https://github.com/matheusfideles-stack/qrcode.generator",
     gradient: "from-purple-600 to-purple-400",
     featured: true,
   },
   {
-    title: "QR Code Generator API",
+    title: "Screenmatch",
     description:
-      "API para geração dinâmica de QR Codes. Suporta customização de tamanho, formato e codificação de dados em tempo real.",
-    tags: ["Java", "Spring Boot", "REST API", "QR Code"],
-    demoUrl: "https://github.com/matheusfideles-stack/qr-code-generator",
-    githubUrl: "https://github.com/matheusfideles-stack/qr-code-generator",
+      "Catálogo de séries com persistência de dados. Busca informações em APIs externas e armazena localmente usando Spring Data e H2.",
+    tags: ["Java", "Spring Boot", "H2", "REST", "API Integration"],
+    demoUrl: "https://github.com/matheusfideles-stack/screenmatch",
+    githubUrl: "https://github.com/matheusfideles-stack/screenmatch",
     gradient: "from-orange-600 to-orange-400",
   },
   {
-    title: "Screenmatch",
+    title: "Autenticação e Autorização",
     description:
-      "Catálogo de séries com persistência de dados. Aplicação que busca informações de séries em APIs externas e armazena localmente com Spring Data.",
-    tags: ["Java", "Spring Boot", "H2", "REST", "Database"],
-    demoUrl: "https://github.com/matheusfideles-stack/screenmatch",
-    githubUrl: "https://github.com/matheusfideles-stack/screenmatch",
-    gradient: "from-pink-600 to-pink-400",
+      "Sistema completo de autenticação e autorização com Spring Boot. Implementa JWT, validação de permissões e proteção de endpoints.",
+    tags: ["Java", "Spring Boot", "JWT", "Security"],
+    demoUrl: "https://github.com/matheusfideles-stack/Autenticacao_Autorizacao",
+    githubUrl: "https://github.com/matheusfideles-stack/Autenticacao_Autorizacao",
+    gradient: "from-red-600 to-red-400",
   },
   {
-    title: "Desafio Itaú Spring Boot",
+    title: "Desafio Itaú",
     description:
-      "Desafio técnico do Itaú implementado com Spring Boot. Demonstra padrões de desenvolvimento, testes e boas práticas de engenharia.",
-    tags: ["Java", "Spring Boot", "Challenge", "Testing"],
+      "Desafio técnico do Itaú implementado com Spring Boot. Demonstra padrões de desenvolvimento, testes unitários e boas práticas.",
+    tags: ["Java", "Spring Boot", "Testing", "Challenge"],
     demoUrl: "https://github.com/matheusfideles-stack/desafio.itau.springboot",
     githubUrl: "https://github.com/matheusfideles-stack/desafio.itau.springboot",
-    gradient: "from-red-600 to-red-400",
+    gradient: "from-pink-600 to-pink-400",
   },
 ];
 
