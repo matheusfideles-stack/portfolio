@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   description:
     "Matheus Fideles is a Backend Software Engineer building scalable, reliable systems with Java and Spring Boot.",
   metadataBase: new URL("https://matheusfideles.dev"),
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Matheus Fideles — Software Engineer",
     description:
