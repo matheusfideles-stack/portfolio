@@ -8,9 +8,9 @@
   --muted: 113 113 122;
   --border: 228 228 231;
   --surface: 255 255 255;
-  --accent: 234 88 12;
+  --accent: 37 99 235;
   --accent-foreground: 255 255 255;
-  --accent-soft: 255 237 213;
+  --accent-soft: 219 234 254;
 
   color-scheme: light;
 }
@@ -21,9 +21,9 @@ html.dark {
   --muted: 161 161 170;
   --border: 39 39 42;
   --surface: 20 20 22;
-  --accent: 251 146 60;
+  --accent: 59 130 246;
   --accent-foreground: 9 9 11;
-  --accent-soft: 67 41 21;
+  --accent-soft: 30 58 138;
 
   color-scheme: dark;
 }
