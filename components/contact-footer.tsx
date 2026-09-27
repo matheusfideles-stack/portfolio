@@ -58,7 +58,8 @@ export function ContactFooter() {
               {socialLinks.email}
             </a>
             <a
-              href={socialLinks.resume}
+              href={language === "pt" ? "/cv-pt.pdf" : "/cv-en.pdf"}
+              download
               className="focus-ring group inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/50 hover:bg-surface"
             >
               {t.contact.resume}
@@ -81,13 +82,10 @@ export function ContactFooter() {
           </div>
         </motion.div>
 
-        <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted sm:flex-row">
+        <div className="mt-20 border-t border-border pt-8 text-center text-sm text-muted">
           <p>
             © 2026 Matheus Fideles.{" "}
             {language === "pt" ? "Todos os direitos reservados." : "All rights reserved."}
-          </p>
-          <p className="text-xs text-muted/70">
-            {t.footer.attribution}
           </p>
         </div>
       </div>

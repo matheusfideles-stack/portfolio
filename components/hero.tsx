@@ -72,7 +72,8 @@ export function Hero() {
               {t.hero.cta.contact}
             </a>
             <a
-              href={socialLinks.resume}
+              href={language === "pt" ? "/cv-pt.pdf" : "/cv-en.pdf"}
+              download
               className="focus-ring group inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/50 hover:bg-surface"
             >
               {t.hero.cta.resume}
