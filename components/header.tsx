@@ -50,7 +50,8 @@ export function Header() {
           href="#top"
           className="focus-ring rounded-md font-mono text-[15px] font-semibold tracking-tight text-foreground"
         >
-          <span className="text-accent">m</span>atheus<span className="text-accent">.dev</span>
+          <span style={{ color: "rgb(37, 99, 235)" }}>m</span>atheus
+          <span style={{ color: "rgb(37, 99, 235)" }}>.dev</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
