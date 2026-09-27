@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Matheus Fideles — Software Engineer",
+  title: "Matheus Fideles",
   description:
     "Matheus Fideles is a Backend Software Engineer building scalable, reliable systems with Java and Spring Boot.",
   metadataBase: new URL("https://matheusfideles.dev"),
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Matheus Fideles — Software Engineer",
+    title: "Matheus Fideles",
     description:
       "Backend Software Engineer building scalable, reliable systems with Java and Spring Boot.",
     type: "website",
