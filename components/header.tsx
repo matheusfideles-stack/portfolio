@@ -50,7 +50,7 @@ export function Header() {
           href="#top"
           className="focus-ring rounded-md font-mono text-[15px] font-semibold tracking-tight text-foreground"
         >
-          matheus<span className="text-accent">.dev</span>
+          <span className="text-accent">m</span>atheus<span className="text-accent">.dev</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
