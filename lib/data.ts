@@ -141,7 +141,7 @@ export const journey: JourneyItem[] = [
     descriptionEn:
       "Transforming sales and customer data into actionable insights — building reports and dashboards that support commercial decision-making for a Vivo partner operation.",
     current: true,
-    logo: "/flexcon-logo.svg",
+    logo: "/flexcon-logo.png",
   },
 ];
 
