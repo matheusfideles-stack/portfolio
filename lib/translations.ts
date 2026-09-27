@@ -32,13 +32,13 @@ export const translations = {
       principles: {
         principle1: "Código legível é código mantível",
         description1:
-          "Estruturo projetos para que terceiros — ou eu mesmo em 6 meses — entendam rapidamente o que cada componente faz.",
+          "Código que qualquer um entende rapidamente — ou que eu mesmo compreendo em 6 meses.",
         principle2: "Arquitetura que escala",
         description2:
-          "Desde o schema do banco até a orquestração de serviços, cada decisão considera crescimento: performance, confiabilidade e manutenção futura.",
+          "Cada decisão de design pensa em crescimento: performance, confiabilidade e manutenção no longo prazo.",
         principle3: "Qualidade antes de tudo",
         description3:
-          "Testes rigorosos, tratamento de erros robusto e documentação clara — o que separa código de produção de código que apenas funciona hoje.",
+          "Testes rigorosos, tratamento de erros robusto e documentação clara — a diferença entre código que funciona e código pronto para produção.",
       },
     },
     stack: {
@@ -110,13 +110,13 @@ export const translations = {
       principles: {
         principle1: "Readable code is maintainable code",
         description1:
-          "I structure projects so that anyone — or my future self in 6 months — can quickly understand what each component does.",
+          "Code anyone can understand at first glance — or that I can grasp 6 months from now.",
         principle2: "Architecture that scales",
         description2:
-          "From database schema to service orchestration, every decision considers growth: performance, reliability, and future maintenance.",
+          "Every design decision anticipates growth: performance, reliability, and long-term maintainability.",
         principle3: "Quality above all",
         description3:
-          "Rigorous testing, robust error handling, and clear documentation — the difference between production code and code that merely works today.",
+          "Rigorous testing, robust error handling, and clear docs — the difference between working code and production-ready code.",
       },
     },
     stack: {
