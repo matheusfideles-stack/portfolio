@@ -75,12 +75,30 @@ export type SkillCategory = {
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Backend",
-    skills: ["Java", "Spring Boot", "RESTful APIs", "PostgreSQL", "MongoDB"],
-  },
-  {
-    title: "Tools & Architecture",
-    skills: ["Git & GitHub", "Docker", "CI/CD"],
+    title: "Tech Stack",
+    skills: [
+      "Java",
+      "Spring Boot",
+      "Kotlin",
+      "Python",
+      "RESTful APIs",
+      "Kafka",
+      "AWS",
+      "Redis",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Docker",
+      "Terraform",
+      "Microsserviços",
+      "Datadog",
+      "EDA",
+      "Grafana",
+      "Telemetria",
+      "Jaeger",
+      "Git & GitHub",
+      "CI/CD",
+    ],
   },
 ];
 
