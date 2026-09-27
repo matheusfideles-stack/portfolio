@@ -28,7 +28,7 @@ export function Journey() {
         description={language === "pt" ? "Uma visão rápida do meu caminho profissional até agora." : "A quick look at my professional path so far."}
       />
 
-      <div className="relative border-l border-border pl-8">
+      <div className="space-y-8">
         {journey.map((item, index) => (
           <motion.div
             key={item.company}
@@ -36,24 +36,27 @@ export function Journey() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-            className="relative pb-10 last:pb-0"
+            className="rounded-2xl border border-border bg-surface p-6"
           >
-            <span className="absolute -left-[2.35rem] top-1.5 flex h-3 w-3 items-center justify-center">
-              {item.current && (
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
-              )}
-              <span className="relative inline-flex h-3 w-3 rounded-full bg-accent" />
-            </span>
-
-            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-              <h3 className="text-base font-semibold text-foreground">
-                {item.role} &middot; {item.company}
-              </h3>
-              <span className="text-xs font-medium uppercase tracking-wide text-muted">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div className="flex gap-4">
+                {item.logo && (
+                  <div className="h-12 w-12 flex-shrink-0 rounded-lg border border-border bg-background p-1">
+                    <img src={item.logo} alt={item.company} className="h-full w-full object-contain" />
+                  </div>
+                )}
+                <div className="flex-1">
+                  <h3 className="text-base font-semibold text-foreground">
+                    {item.company}
+                  </h3>
+                  <p className="text-sm text-muted">{item.role}</p>
+                </div>
+              </div>
+              <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
                 {item.period}
               </span>
             </div>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
               {item.description}
             </p>
           </motion.div>

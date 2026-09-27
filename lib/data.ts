@@ -112,17 +112,19 @@ export type JourneyItem = {
   period: string;
   description: string;
   current?: boolean;
+  logo?: string;
 };
 
 // Replace with your real work history.
 export const journey: JourneyItem[] = [
   {
-    company: "Flexcon (Vivo Partner)",
-    role: "Commercial Intelligence",
-    period: "2026 — Present",
+    company: "Flexcon",
+    role: "Inteligência Comercial",
+    period: "2026 — agora",
     description:
-      "Turning sales and customer data into actionable insights — building reports and dashboards that support commercial decision-making for a Vivo partner operation.",
+      "Transformar dados de vendas e clientes em insights acionáveis — construindo relatórios e dashboards que apoiam a tomada de decisões comerciais para uma operação parceira da Vivo.",
     current: true,
+    logo: "/flexcon-logo.png",
   },
 ];
 
