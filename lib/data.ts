@@ -11,6 +11,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Pedidos Saga",
+    descriptionPt:
+      "Marketplace distribuído com saga coreografada, Transactional Outbox + CDC (Debezium), idempotência em três níveis e Kafka. Inclui testes de caos e carga que comprovam o comportamento sob falhas e escala.",
+    descriptionEn:
+      "Distributed marketplace with a choreographed saga, Transactional Outbox + CDC (Debezium), three-level idempotency and Kafka. Includes chaos and load tests that prove behavior under failures and scale.",
+    tags: ["Java", "Spring Boot", "Kafka", "PostgreSQL", "Debezium", "Kubernetes"],
+    demoUrl: "https://github.com/matheusfideles-stack/Pedidos-Saga",
+    githubUrl: "https://github.com/matheusfideles-stack/Pedidos-Saga",
+    gradient: "from-sky-600 to-sky-400",
+    featured: true,
+  },
+  {
     title: "Med Voll",
     descriptionPt:
       "CRUD completo para clínica de médicos em Spring Boot. Gerenciamento de consultas, médicos e pacientes com persistência em banco de dados.",
@@ -33,29 +45,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/matheusfideles-stack/os-manager",
     gradient: "from-emerald-600 to-emerald-400",
     featured: true,
-  },
-  {
-    title: "QR Code Generator",
-    descriptionPt:
-      "API para geração dinâmica de QR Codes com Spring Boot. Suporta customização de tamanho, formato e codificação em tempo real.",
-    descriptionEn:
-      "API for dynamic QR Code generation with Spring Boot. Supports customization of size, format and real-time encoding.",
-    tags: ["Java", "Spring Boot", "REST API", "QR Code"],
-    demoUrl: "https://github.com/matheusfideles-stack/qrcode.generator",
-    githubUrl: "https://github.com/matheusfideles-stack/qrcode.generator",
-    gradient: "from-purple-600 to-purple-400",
-    featured: true,
-  },
-  {
-    title: "Screenmatch",
-    descriptionPt:
-      "Catálogo de séries com persistência de dados. Busca informações em APIs externas e armazena localmente usando Spring Data e H2.",
-    descriptionEn:
-      "Series catalog with data persistence. Fetches information from external APIs and stores locally using Spring Data and H2.",
-    tags: ["Java", "Spring Boot", "H2", "REST", "API Integration"],
-    demoUrl: "https://github.com/matheusfideles-stack/screenmatch",
-    githubUrl: "https://github.com/matheusfideles-stack/screenmatch",
-    gradient: "from-orange-600 to-orange-400",
   },
   {
     title: "Autenticação e Autorização",

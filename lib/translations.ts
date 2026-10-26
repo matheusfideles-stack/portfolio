@@ -24,7 +24,7 @@ export const translations = {
       eyebrow: "Sobre",
       title: "Eu construo software do jeito que gostaria de usar.",
       description1:
-        "Sou um Engenheiro de Software Backend focado em Java e Spring Boot — construindo APIs, serviços e modelos de dados que se mantêm confiáveis conforme escalam. Me importo em acertar os fundamentos: limites claros, estruturas de dados sólidas e código que é fácil de raciocinar.",
+        "focado em Java e Spring Boot — construindo APIs, serviços e modelos de dados que se mantêm confiáveis conforme escalam. Me importo em acertar os fundamentos: limites claros, estruturas de dados sólidas e código que é fácil de raciocinar.",
       description2:
         "Construo sistemas pensando em durabilidade: arquitetura limpa, decisões bem fundamentadas e código que continua confiável meses depois de ir para produção.",
       description3:
@@ -102,7 +102,7 @@ export const translations = {
       eyebrow: "About",
       title: "I build software the way I'd want to use it.",
       description1:
-        "I'm a Backend Software Engineer focused on Java and Spring Boot — building APIs, services, and data models that stay reliable as they scale. I care about getting the fundamentals right: clear boundaries, solid data structures, and code that's easy to reason about.",
+        "focused on Java and Spring Boot — building APIs, services, and data models that stay reliable as they scale. I care about getting the fundamentals right: clear boundaries, solid data structures, and code that's easy to reason about.",
       description2:
         "I build systems with durability in mind: clean architecture, well-reasoned decisions, and code that stays reliable long after shipping to production.",
       description3:
